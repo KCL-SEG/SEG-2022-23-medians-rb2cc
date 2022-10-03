@@ -11,7 +11,6 @@
 #     else:
 #         break
 # print(numbers)
-medianValue = 0
 
 while True:
     try:
