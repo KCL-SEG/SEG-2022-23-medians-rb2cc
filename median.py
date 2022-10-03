@@ -35,4 +35,3 @@ while True:
     else:
         break
 print("median: " + str(answer))
-print(str(listLen))
