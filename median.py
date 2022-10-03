@@ -18,13 +18,12 @@ while True:
         print("Enter a list of numbers separated by commas: ")
         numbers = [float(value) for value in input().split(",")]
         sortedNumbers = sorted(numbers)
-        medianNo = float(len(sortedNumbers)/2)
-        medianValue = 0
 
-        if medianNo % 2 == 0:
-            medianValue = (sortedNumbers[int(medianNo - 1)] + sortedNumbers[int(medianNo + 1)])/2
+        if (len(sortedNumbers)) % 2 == 0:
+            medianValue = (sortedNumbers[len(sortedNumbers)//2 - 2] +
+                           sortedNumbers[len(sortedNumbers)//2 + 1])/2
         else:
-            medianValue = sortedNumbers[medianNo]
+            medianValue = sortedNumbers[int(len(sortedNumbers)/2)]
 
     except ValueError:
         print("Some input could not be converted to a number!")
